@@ -115,14 +115,16 @@ input{
 	width: 100%;
 	height: auto;
 }
-button{	
-	width: 90%;
-	height: 50px;
-	font-size: 100%;
-}
 .displaynone{
     display: none;
 }
 .height25{
     height: 25%;
+}
+.button{
+    width: 50%;
+    height: 60%;
+}
+.height50{
+    height: 50%;
 }
