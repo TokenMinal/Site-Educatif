@@ -100,6 +100,7 @@ select2.addEventListener('click', function() {
 				break;
 			}
 			operatortest.textContent = '+';
+			checkop = true;
 		}
 		else if (y == 2) {
 			if (checkop == true) {
@@ -107,6 +108,7 @@ select2.addEventListener('click', function() {
 				break;
 			}
 			operatortest.textContent = '-';
+			checkop = true;
 		}
 		else if (y == 3) {
 			if (checkop == true) {
@@ -114,6 +116,7 @@ select2.addEventListener('click', function() {
 				break;
 			}
 			operatortest.textContent = 'x';
+			checkop = true;
 		}
 		else if (y == 4) {
 			if (checkop == true) {
@@ -121,6 +124,7 @@ select2.addEventListener('click', function() {
 				break;
 			}
 			operatortest.textContent = '÷';
+			checkop = true;
 		}
 		break;
 	default:
