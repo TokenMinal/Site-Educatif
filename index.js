@@ -95,15 +95,31 @@ select2.addEventListener('click', function() {
 		break;
 	case 'random':
 		if (y == 1) {
+			if (checkop == true) {
+				checkop = false;
+				break;
+			}
 			operatortest.textContent = '+';
 		}
 		else if (y == 2) {
+			if (checkop == true) {
+				checkop = false;
+				break;
+			}
 			operatortest.textContent = '-';
 		}
 		else if (y == 3) {
+			if (checkop == true) {
+				checkop = false;
+				break;
+			}
 			operatortest.textContent = 'x';
 		}
 		else if (y == 4) {
+			if (checkop == true) {
+				checkop = false;
+				break;
+			}
 			operatortest.textContent = '÷';
 		}
 		break;
