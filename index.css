@@ -85,6 +85,9 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+.textcenter{
+    text-align: center;
+}
 .dropdown-container {
     width: 195px;
 	display: flex;
@@ -116,4 +119,10 @@ button{
 	width: 90%;
 	height: 50px;
 	font-size: 100%;
+}
+.displaynone{
+    display: none;
+}
+.height33{
+    height: 33%;
 }
