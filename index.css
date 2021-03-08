@@ -79,8 +79,8 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 .dropdown-container {
-    width: 70px;
-    position: relative;
+    width: 195px;
+	display: flex;
 }
 select {
     width: 100%;
