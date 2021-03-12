@@ -219,6 +219,8 @@ select2.addEventListener('click', function() {
 });
 button.addEventListener('click', function() {
 	clicked = true;
+	select.selectedIndex = 2;
 	menu.style.display = 'none';
 	math.style.display = 'inline';
+	document.getElementById('class').style.paddingBottom = '20px';
 });
