@@ -157,7 +157,7 @@ select.addEventListener('click', function() {
 			}
 			check = true;
 			break;
-		default:
+		case 'menu':
 			location.reload();
 		}
 	}
