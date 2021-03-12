@@ -158,7 +158,7 @@ select.addEventListener('click', function() {
 			check = true;
 			break;
 		default:
-			numbertest.textContent = ' aucun choisi';
+			location.reload();
 		}
 	}
 
