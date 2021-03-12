@@ -174,3 +174,9 @@ input{
 .colorgoldenrod{
 	color: goldenrod;
 }
+.width900 {
+	width: 900px;
+}
+.height87 {
+	height: 87.5px;
+}
