@@ -296,5 +296,4 @@ button.addEventListener('click', function() {
 	menu.style.display = 'none';
 	math.style.display = 'inline';
 	document.getElementById('class').style.paddingBottom = '20px';
-	console.log(y);
 });
