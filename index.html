@@ -12,6 +12,13 @@
 				<h1 id="h1" class="centertext">le math</h1>
 				<div class="centerdiv">
 					<div class="dropdown-container">
+					<select class="select" name="selection" id="selection2">
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="x">x</option>
+						<option value="÷">÷</option>
+						<option value="random">random</option>
+					</select>
 					<select class="select" name="selection" id="selection">
 						<option value="vide"></option>
 						<option value="menu">menu</option>
@@ -29,20 +36,13 @@
 						<option value="i12">12</option>
 						<option value="random">random</option>
 					</select>
-					<select class="select" name="selection" id="selection2">
-						<option value="+">+</option>
-						<option value="-">-</option>
-						<option value="x">x</option>
-						<option value="÷">÷</option>
-						<option value="random">random</option>
-					</select>
 					</div>
 					<div id="menu" class="centerdiv">
 						<div class="width100 height25">
 							<p class="verticalcenter textcenter font-30px">Voici un petit jeu de mathematique.</p>
 						</div>
 						<div class="width100 height25">
-							<p class="verticalcenter textcenter font-30px">À l'aide des menus déroulants au haut de la page, vous pouvez choisir les tables ainsi que les operations</p>
+							<p class="verticalcenter textcenter font-30px">À l'aide des menus déroulants au haut de la page, vous pouvez choisir les tables ainsi que les operations apres avoir repondu a tous les equation appuyez su le bouton confirmer. Choisiser l'operateur avant le nombre</p>
 						</div>
 						<div class="width100 height25">
 							<p class="verticalcenter textcenter font-30px">Vous pouvez les utiliser afin de comprendre comment ils fonctionnent puis, cliquer sur le bouton afin de continuer</p>
@@ -57,31 +57,15 @@
 						</div>
 					</div>
 					<div id="math" class="centerdiv displaynone">
-						<div id="R1" class="width100px height100px float-right">
+						<div id="R1" class="width100px height100px float-left">
 							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span> <span class="multiple2">7</span> = </p>
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span> <span class="multiple2">1</span> = </p>
 							</div>
 							<div class="width100px height100px float-right">
 								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
 							</div>
 						</div>
-						<div id="L1" class="width100px height100px float-left">
-							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">1</span> = </p>
-							</div>
-							<div class="width100px height100px float-right">
-								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
-							</div>
-						</div>
-						<div id="R2" class="width100px height100px float-right">
-							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">8</span> = </p>
-							</div>
-							<div class="width100px height100px float-right">
-								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
-							</div>
-						</div>
-						<div id="L2" class="width100px height100px float-left">
+						<div id="L1" class="width100px height100px float-right">
 							<div class=" width100px height100px float-left">
 								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">2</span> = </p>
 							</div>
@@ -89,15 +73,7 @@
 								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
 							</div>
 						</div>
-						<div id="R3" class="width100px height100px float-right">
-							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">9</span> = </p>
-							</div>
-							<div class="width100px height100px float-right">
-								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
-							</div>
-						</div>
-						<div id="L3" class="width100px height100px float-left">
+						<div id="R2" class="width100px height100px float-left">
 							<div class=" width100px height100px float-left">
 								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">3</span> = </p>
 							</div>
@@ -105,15 +81,7 @@
 								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
 							</div>
 						</div>
-						<div id="R4" class="width100px height100px float-right">
-							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">10</span> = </p>
-							</div>
-							<div class="width100px height100px float-right">
-								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
-							</div>
-						</div>
-						<div id="L4" class="width100px height100px float-left">
+						<div id="L2" class="width100px height100px float-right">
 							<div class=" width100px height100px float-left">
 								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">4</span> = </p>
 							</div>
@@ -121,15 +89,7 @@
 								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
 							</div>
 						</div>
-						<div id="R5" class="width100px height100px float-right">
-							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">11</span> = </p>
-							</div>
-							<div class="width100px height100px float-right">
-								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
-							</div>
-						</div>
-						<div id="L5"class="width100px height100px float-left">
+						<div id="R3" class="width100px height100px float-left">
 							<div class=" width100px height100px float-left">
 								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">5</span> = </p>
 							</div>
@@ -137,15 +97,7 @@
 								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
 							</div>
 						</div>
-						<div id="R6" class="width100px height100px float-right">
-							<div class=" width100px height100px float-left">
-								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">12</span> = </p>
-							</div>
-							<div class="width100px height100px float-right">
-								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
-							</div>
-						</div>
-						<div id="L5"class="width100px height100px float-left">
+						<div id="L3" class="width100px height100px float-right">
 							<div class=" width100px height100px float-left">
 								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">6</span> = </p>
 							</div>
@@ -153,8 +105,56 @@
 								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
 							</div>
 						</div>
+						<div id="R4" class="width100px height100px float-left">
+							<div class=" width100px height100px float-left">
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">7</span> = </p>
+							</div>
+							<div class="width100px height100px float-right">
+								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
+							</div>
+						</div>
+						<div id="L4" class="width100px height100px float-right">
+							<div class=" width100px height100px float-left">
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">8</span> = </p>
+							</div>
+							<div class="width100px height100px float-right">
+								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
+							</div>
+						</div>
+						<div id="R5" class="width100px height100px float-left">
+							<div class=" width100px height100px float-left">
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">9</span> = </p>
+							</div>
+							<div class="width100px height100px float-right">
+								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
+							</div>
+						</div>
+						<div id="L5"class="width100px height100px float-right">
+							<div class=" width100px height100px float-left">
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">10</span> = </p>
+							</div>
+							<div class="width100px height100px float-right">
+								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
+							</div>
+						</div>
+						<div id="R6" class="width100px height100px float-left ">
+							<div class=" width100px height100px float-left">
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">11</span> = </p>
+							</div>
+							<div class="width100px height100px float-right">
+								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
+							</div>
+						</div>
+						<div id="L5"class="width100px height100px float-right">
+							<div class=" width100px height100px float-left">
+								<p class="verticalcenter font-40px"><span class="multiple">1</span><span class="operator"> + </span><span class="multiple2">12</span> = </p>
+							</div>
+							<div class="width100px height100px float-right">
+								<input class="input verticalcenter float-left" type="number" id="fname" name="fname">
+							</div>
+						</div>
 						<div class="width900 height87 float-left">
-							<button id="button" class="verticalcenter button button2"><span class="font-10px colorgoldenrod">when done click me </span></button>
+							<button id="button" class="verticalcenter button button2"><span class="font-10px colorgoldenrod">Terminer </span></button>
 						</div>
 					</div>
 					</div>
