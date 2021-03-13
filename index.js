@@ -1,3 +1,16 @@
+function wackynumber(num1, op, num2) {
+	let oui;
+	switch(op) {
+	case ' + ':
+		return parseInt(num1) + parseInt(num2);
+	case ' - ':
+		return parseInt(num1) - parseInt(num2);
+	case ' x ':
+		return parseInt(num1) * parseInt(num2);
+	case ' ÷ ':
+		return parseInt(num1) / parseInt(num2);
+	}
+}
 const select = document.getElementById('selection');
 const select2 = document.getElementById('selection2');
 const numbertest = document.getElementById('numbertest');
@@ -8,6 +21,9 @@ const multiple2 = document.getElementsByClassName('multiple2');
 const operator = document.getElementsByClassName('operator');
 const menu = document.getElementById('menu');
 const math = document.getElementById('math');
+const button2 = document.getElementById('cringe');
+// eslint-disable-next-line no-unused-vars
+const input = document.getElementsByClassName('input');
 let check;
 let checkop;
 let clicked = false;
@@ -81,71 +97,83 @@ select.addEventListener('click', function() {
 		case 'i1':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '1';
+				multiple2[i].textContent = i + 1;
 			}
 			break;
 		case 'i2':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '2';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i3':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '3';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i4':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '4';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i5':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '5';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i6':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '6';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i7':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '7';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i8':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '8';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i9':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '9';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i10':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '10';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i11':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '11';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
 		case 'i12':
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = '12';
+				multiple2[i].textContent = i + 1;
 			}
 			check = false;
 			break;
@@ -156,6 +184,7 @@ select.addEventListener('click', function() {
 			}
 			for (i = 0; i < 12; i++) {
 				multiple1[i].textContent = Math.floor(Math.random() * 12) + 1;
+				multiple2[i].textContent = i + 1;
 			}
 			check = true;
 			break;
@@ -488,4 +517,10 @@ button.addEventListener('click', function() {
 	menu.style.display = 'none';
 	math.style.display = 'inline';
 	document.getElementById('class').style.paddingBottom = '20px';
+});
+button2.addEventListener('click', function() {
+	let i;
+	for (i = 0; i < 12; i++) {
+		console.log(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText));
+	}
 });
