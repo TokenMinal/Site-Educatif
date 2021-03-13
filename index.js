@@ -1,5 +1,4 @@
 function wackynumber(num1, op, num2) {
-	let oui;
 	switch(op) {
 	case ' + ':
 		return parseInt(num1) + parseInt(num2);
