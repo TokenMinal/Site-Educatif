@@ -1,3 +1,29 @@
+const div = document.getElementsByClassName('wacky');
+const select = document.getElementById('selection');
+const select2 = document.getElementById('selection2');
+const numbertest = document.getElementById('numbertest');
+const operatortest = document.getElementById('operatortest');
+const button = document.getElementById('button');
+const multiple1 = document.getElementsByClassName('multiple');
+const multiple2 = document.getElementsByClassName('multiple2');
+const operator = document.getElementsByClassName('operator');
+const menu = document.getElementById('menu');
+const math = document.getElementById('math');
+const button2 = document.getElementById('cringe');
+const input = document.getElementsByClassName('input');
+let score = 0;
+let check;
+let checkop;
+let clicked = false;
+function checkvalue(input1, input2, i) {
+	if (input1 == input2) {
+		div[i].style.backgroundColor = 'green';
+		score += 1;
+	}
+	else{
+		div[i].style.backgroundColor = 'red';
+	}
+}
 function wackynumber(num1, op, num2) {
 	switch(op) {
 	case ' + ':
@@ -10,22 +36,6 @@ function wackynumber(num1, op, num2) {
 		return parseInt(num1) / parseInt(num2);
 	}
 }
-const select = document.getElementById('selection');
-const select2 = document.getElementById('selection2');
-const numbertest = document.getElementById('numbertest');
-const operatortest = document.getElementById('operatortest');
-const button = document.getElementById('button');
-const multiple1 = document.getElementsByClassName('multiple');
-const multiple2 = document.getElementsByClassName('multiple2');
-const operator = document.getElementsByClassName('operator');
-const menu = document.getElementById('menu');
-const math = document.getElementById('math');
-const button2 = document.getElementById('cringe');
-// eslint-disable-next-line no-unused-vars
-const input = document.getElementsByClassName('input');
-let check;
-let checkop;
-let clicked = false;
 select.addEventListener('click', function() {
 	const x = document.getElementById('selection').value;
 	if (clicked === false) {
@@ -520,6 +530,8 @@ button.addEventListener('click', function() {
 button2.addEventListener('click', function() {
 	let i;
 	for (i = 0; i < 12; i++) {
-		console.log(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText));
+		checkvalue(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText), input[i].value, i);
 	}
+	alert(score);
+	console.log(score);
 });
