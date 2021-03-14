@@ -1,3 +1,7 @@
+window.onload = function() {
+	const cringe2 = localStorage.getItem('cringe');
+	score2.textContent = cringe2;
+};
 const div = document.getElementsByClassName('wacky');
 const select = document.getElementById('selection');
 const select2 = document.getElementById('selection2');
@@ -10,8 +14,11 @@ const operator = document.getElementsByClassName('operator');
 const menu = document.getElementById('menu');
 const math = document.getElementById('math');
 const button2 = document.getElementById('cringe');
+const button3 = document.getElementById('button3');
 const input = document.getElementsByClassName('input');
-let score = 0;
+const score2 = document.getElementById('score');
+const button4 = document.getElementById('button4');
+let score = parseInt(localStorage.getItem('cringe'));
 let check;
 let checkop;
 let clicked = false;
@@ -19,6 +26,7 @@ function checkvalue(input1, input2, i) {
 	if (input1 == input2) {
 		div[i].style.backgroundColor = 'green';
 		score += 1;
+		localStorage.setItem('cringe', score);
 	}
 	else{
 		div[i].style.backgroundColor = 'red';
@@ -197,8 +205,6 @@ select.addEventListener('click', function() {
 			}
 			check = true;
 			break;
-		case 'menu':
-			location.reload();
 		}
 	}
 	else if (clicked === true && document.getElementById('selection2').value === '÷') {
@@ -287,8 +293,6 @@ select.addEventListener('click', function() {
 			}
 			check = true;
 			break;
-		case 'menu':
-			location.reload();
 		}
 	}
 	else if (clicked === true && document.getElementById('selection2').value === '-') {
@@ -389,8 +393,6 @@ select.addEventListener('click', function() {
 			}
 			check = true;
 			break;
-		case 'menu':
-			location.reload();
 		}
 	}
 });
@@ -533,5 +535,13 @@ button2.addEventListener('click', function() {
 		checkvalue(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText), input[i].value, i);
 	}
 	alert(score);
-	console.log(score);
+	const cringe2 = localStorage.getItem('cringe');
+	score2.textContent = cringe2;
 });
+button3.addEventListener('click', function() {
+	localStorage.setItem('cringe', 0);
+	score2.textContent = 0;
+});
+button4.addEventListener('click', function() {
+	location.reload();
+})
