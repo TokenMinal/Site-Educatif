@@ -1,5 +1,18 @@
 window.onload = function() {
-	const cringe2 = localStorage.getItem('cringe');
+	const score1 = localStorage.getItem('score');
+	const score3 = Number.isInteger(parseInt(score1));
+	if(score3 === true) {
+		console.log('good');
+	}
+	else if (score3 === false) {
+		console.log('bye bye');
+		localStorage.setItem('score', 0);
+		window.location.reload();
+	}
+	else {
+		console.log('how?');
+	}
+	const cringe2 = localStorage.getItem('score');
 	score2.textContent = cringe2;
 	background();
 };
@@ -19,7 +32,7 @@ const button3 = document.getElementById('button3');
 const input = document.getElementsByClassName('input');
 const score2 = document.getElementById('score');
 const button4 = document.getElementById('button4');
-let score = parseInt(localStorage.getItem('cringe'));
+let score = parseInt(localStorage.getItem('score'));
 let check;
 let checkop;
 let clicked = false;
@@ -27,7 +40,7 @@ function checkvalue(input1, input2, i) {
 	if (input1 == input2) {
 		div[i].style.backgroundColor = 'green';
 		score += 1;
-		localStorage.setItem('cringe', score);
+		localStorage.setItem('score', score);
 	}
 	else{
 		div[i].style.backgroundColor = 'red';
@@ -536,11 +549,11 @@ button2.addEventListener('click', function() {
 		checkvalue(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText), input[i].value, i);
 	}
 	alert(score);
-	const cringe2 = localStorage.getItem('cringe');
+	const cringe2 = localStorage.getItem('score');
 	score2.textContent = cringe2;
 });
 button3.addEventListener('click', function() {
-	localStorage.setItem('cringe', 0);
+	localStorage.setItem('score', 0);
 	score2.textContent = 0;
 });
 button4.addEventListener('click', function() {
