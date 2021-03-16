@@ -557,7 +557,6 @@ button2.addEventListener('click', function() {
 		alert(score);
 		const cringe2 = localStorage.getItem('score');
 		score2.textContent = cringe2;
-		window.location.reload();
 	}
 });
 button3.addEventListener('click', function() {
