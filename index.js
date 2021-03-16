@@ -637,8 +637,8 @@ function background() {
 	};
 	Line.prototype.beginPhase = function() {
 
-		this.x += this.addedX;
-		this.y += this.addedY;
+		this.x += this.addedX ;
+		this.y += this.addedY ;
 
 		this.time = 0;
 		this.targetTime = (opts.baseTime + opts.addedTime * Math.random()) | 0;
