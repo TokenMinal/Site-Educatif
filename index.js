@@ -32,6 +32,7 @@ const button3 = document.getElementById('button3');
 const input = document.getElementsByClassName('input');
 const score2 = document.getElementById('score');
 const button4 = document.getElementById('button4');
+let kappa = false;
 let score = parseInt(localStorage.getItem('score'));
 let check;
 let checkop;
@@ -544,14 +545,20 @@ button.addEventListener('click', function() {
 	document.getElementById('class').style.paddingBottom = '20px';
 });
 button2.addEventListener('click', function() {
-	let i;
-	for (i = 0; i < 12; i++) {
-		checkvalue(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText), input[i].value, i);
+	if (kappa == true) {
+		window.location.reload();
 	}
-	alert(score);
-	const cringe2 = localStorage.getItem('score');
-	score2.textContent = cringe2;
-	window.location.reload();
+	else if (kappa == false) {
+		let i;
+		for (i = 0; i < 12; i++) {
+			checkvalue(wackynumber(multiple1[i].innerText, operator[i].innerText, multiple2[i].innerText), input[i].value, i);
+		}
+		kappa = true;
+		alert(score);
+		const cringe2 = localStorage.getItem('score');
+		score2.textContent = cringe2;
+		window.location.reload();
+	}
 });
 button3.addEventListener('click', function() {
 	localStorage.setItem('score', 0);
