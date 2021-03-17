@@ -207,8 +207,10 @@ input{
 	width: 500px;
 }
 canvas {
-  
 	position: absolute;
 	top: 0;
 	left: 0;
-  }
+}
+.cringe {
+	position: fixed;
+}
